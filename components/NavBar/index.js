@@ -21,18 +21,18 @@ export default function NavBar() {
             </div> 
 
             <nav>
-                <ul>
+                <ul className={styles.navList}>
                     <li>
-                        <Link href="#about">About</Link>
+                        <Link href="#about" className={styles.navListItem}>About</Link>
                     </li>
                     <li>
-                        <Link href="#projects">Projects</Link>
+                        <Link href="#projects" className={styles.navListItem}>Projects</Link>
                     </li>
                     <li>
-                        <Link href="#skills">Skills</Link>
+                        <Link href="#skills" className={styles.navListItem}>Skills</Link>
                     </li>
                     <li>
-                        <Link href="#contact">Contact</Link>
+                        <Link href="#contact" className={styles.navListItem}>Contact</Link>
                     </li>
                 </ul>
             </nav>
