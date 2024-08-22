@@ -9,14 +9,8 @@ export default function NavBar() {
     return (
         <header className={styles.header}>
             <div>
-                <Link href="/">
-                    <div>
-                        <Image
-                            src={logoImg}
-                            alt="Carol Nikolic logo"
-                            priority
-                        />
-                    </div>
+                <Link href="/" className={styles.navListItem}>
+                    <p className={styles.logoName}>Carol Nikolic</p>
                 </Link>
             </div> 
 
