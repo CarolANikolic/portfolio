@@ -3,10 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import logoImg from "@/public/images/logo.png";
+import styles from "./index.module.css"
 
 export default function NavBar() {
     return (
-        <header>
+        <header className={styles.header}>
             <div>
                 <Link href="/">
                     <div>
