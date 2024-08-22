@@ -1,10 +1,13 @@
 'use client';
 
 import Link from "next/link";
-import Image from "next/image";
-import styles from "./index.module.css"
+import styles from "./index.module.css";
+import MenuIcon from "../MenuIcon";
+import { useState } from "react";
 
 export default function NavBar() {
+    const [menu, setMenu] = useState(false);
+
     return (
         <header className={styles.header}>
             <div>
@@ -13,8 +16,10 @@ export default function NavBar() {
                 </Link>
             </div> 
 
+            <MenuIcon toggleMenu={{ menu, setMenu}}/>
+
             <nav>
-                <ul className={styles.navList}>
+                <ul className={`${styles.navList} ${menu && styles.showMenu}`}>
                     <li>
                         <Link href="#about" className={styles.navListItem}>About</Link>
                     </li>

@@ -1,24 +1,62 @@
 .header {
-    align-items: center; 
     background-color: var(--orange);
+
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    align-items: center; 
     padding: 1rem 1.5rem;
 }
 
 .logoName {
+    color: var(--black);
     font-size: var(--fs-big);
     font-weight:800;
 }
 
 .navList {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: none;
+    align-items: left;
+    padding: 30px 20px;
+    background-color: var(--black);
 }
 
 .navListItem {
+    color: var(--orange);
     text-decoration: none;
-    color: var(--black);
     font-size: var(--fs-medium);
+    height: 100%;
 }
+
+.showMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    transition: display 0.3s ease;
+    gap: 1.5rem;
+    z-index: 2;
+}
+
+@media  screen and (min-width:1024px) {
+    .navList {
+        background-color: var(--orange);
+        color: var(--black);
+        display: flex;
+        align-items: center;
+
+        position: static;
+        top: auto;
+        right: auto;
+
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .navListItem {
+        color: var(--black);
+    }
+}
+
