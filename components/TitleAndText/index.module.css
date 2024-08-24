@@ -1,4 +1,8 @@
-/* index.module.css */
+.titleAndTextContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .boldBlackColor {
     color: var(--black);
     font-weight: var(--fw-darker); 

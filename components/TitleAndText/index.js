@@ -9,7 +9,7 @@ export default function TitleAndText(props) {
     const fontSizeClass = styles[`${fontSize}Font`];
 
     return (
-        <div>
+        <div className={styles.titleAndTextContainer}>
             {title === "h1" ? (
                 <h1 className={`${alignmentClass} ${colorClass} ${fontSizeClass}`}>
                     {titleContent}
