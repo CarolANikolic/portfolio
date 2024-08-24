@@ -2,3 +2,14 @@
     width: 100%;
     background-color: var(--orange);
 }
+
+.imageContainer {
+    width: 22rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.myPhoto {
+    object-fit: cover;
+    width: 100%;
+}

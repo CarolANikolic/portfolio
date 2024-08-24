@@ -1,4 +1,6 @@
 import TitleAndText from "@/components/TitleAndText";
+import Image from "next/image";
+import myPhoto from "../public/images/my-photo.png"
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -21,6 +23,12 @@ export default function Home() {
           color="regularBlack"
           fontSize="small"
           />
+
+          <div>
+            <div className={styles.imageContainer}>
+              <Image src={myPhoto} alt="Carol Nikolic's profile photo" className={styles.myPhoto}/>
+            </div>
+          </div>
       </article>
     </main>
   );
