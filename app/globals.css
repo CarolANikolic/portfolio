@@ -74,11 +74,11 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--height-heading);
+  line-height: var(--height-heading);
 }
 
 p {
-  font-weight: var(--height-text);
+  line-height: var(--height-text);
 }
 
 @media  screen and (min-width: 1024px) {
