@@ -1,0 +1,38 @@
+/* index.module.css */
+.boldBlackColor {
+    color: var(--black);
+    font-weight: var(--fw-darker); 
+}
+
+.regularBlackColor {
+    color: var(--black); 
+    font-weight: var(--fw-lighter); 
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.miniFont {
+    font-size: var(--fs-mini);
+}
+
+.smallFont {
+    font-size: var(--fs-small); 
+}
+
+.mediumFont {
+    font-size: var(--fs-medium);    
+}
+
+.bigFont {
+    font-size: var(--fs-big);      
+}

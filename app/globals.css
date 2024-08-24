@@ -39,7 +39,7 @@ table {
 
   /* Font-weight */
   --fw-lighter: 400;
-  --fw-darker: 500;
+  --fw-darker: 600;
 
   /* Line-height */
   --height-text: 1.5;
@@ -71,6 +71,14 @@ main {
 	
 	width: 100%;
 	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--height-heading);
+}
+
+p {
+  font-weight: var(--height-text);
 }
 
 @media  screen and (min-width: 1024px) {
