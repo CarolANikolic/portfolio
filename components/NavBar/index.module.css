@@ -10,8 +10,8 @@
 
 .logoName {
     color: var(--black);
-    font-size: var(--fs-big);
-    font-weight:800;
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-darker);
 }
 
 .navList {
