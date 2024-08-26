@@ -5,6 +5,7 @@ import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
 import styles from "./index.module.css";
 import ContactIcon from "../ContactIcon";
+import Link from "next/link";
 
 export default function AboutMe() {
     return (
@@ -71,6 +72,27 @@ export default function AboutMe() {
                     color="regularBlack"
                     fontSize="small"
                 />
+
+                <div>
+                    <TitleAndText 
+                        title=""
+                        text={
+                            <>
+                                Want to chat more → 
+                                <span>
+                                    <Link href="#contact" className={styles.aboutSendEmail}>
+                                        Send me an email
+                                    </Link>
+                                </span>
+                            </>
+                        } 
+                        alignment="left"
+                        color="regularBlack"
+                        fontSize="small"
+                    />
+                </div>
+
+            
             </section>
         </>
     );

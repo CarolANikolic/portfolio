@@ -7,7 +7,7 @@
 }
 
 .imageContainer {
-    width: 22rem;
+    width: 20rem;
     margin: 0 auto;
     padding-top: 2rem;
     overflow: hidden; 
@@ -28,6 +28,11 @@
 
     margin: 0 auto;
     padding-top: 2rem;
+}
+
+.aboutSendEmail {
+    text-decoration: underline;
+    color: var(--black);
 }
 
 @media screen and (min-width: 1024px) {
@@ -55,7 +60,6 @@
         width: 26rem;
         margin: 0 auto;
         padding-top: 2rem;
-        overflow: hidden; 
     }
 }
 

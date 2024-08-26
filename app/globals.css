@@ -62,6 +62,7 @@ body {
 
 body {
   min-height: 100vh;
+  background-color: var(--green);
 }
 
 main {
@@ -88,7 +89,12 @@ hr {
   background-color: var(--black);
   
   margin: 2rem auto;
-  width: 90%; 
+  width: 80%; 
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media  screen and (min-width: 1024px) {
@@ -96,10 +102,6 @@ hr {
       --fs-medium: 1.75rem;
       --fs-big: 2.25rem;
   }
-
-hr {
-    width: 80%; 
-}
 }
 
 @media  screen and (min-width: 1200px) {
