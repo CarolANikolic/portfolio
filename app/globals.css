@@ -93,6 +93,7 @@ p {
   :root {
       --fs-medium: 2rem;
       --fs-big: 2.5rem;
+      --fs-small: 1.5rem;
   }
 }
 
