@@ -50,7 +50,7 @@ export default function AboutMe() {
 
             <hr className={styles.customHr}/>
 
-            <section className={styles.about}>
+            <section className={`${styles.about} ${styles.aboutDetails}`}>
                 <TitleAndText 
                     title=""
                     text="My true passion is QA testing, and it all started during my time at a tech startup. Although I was initially focused on social media and marketing, I had the opportunity to interact with the development team. They asked me to test new features and provide feedback as a user. That experience sparked my curiosity about software development and testing, leading me to explore iOS development and later web development."
