@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <main>
       <AboutMe/>
-      <hr className={styles.customHr}/>
     </main>
   );
 }

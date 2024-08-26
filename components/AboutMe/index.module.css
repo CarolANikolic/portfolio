@@ -2,7 +2,8 @@
     background-color: var(--green);
     display: grid;
     gap: 1rem;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .imageContainer {
@@ -30,22 +31,22 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .about {
+    .aboutIntro {
         grid-template-columns: 1fr 1fr; 
     }
 
-    .about > *:first-child {
+    .aboutIntro > *:first-child {
         align-self: end;
         border-top: 1px solid var(--black);
     }
     
-    .about > *:nth-child(1),
-    .about > *:nth-child(2) {
+    .aaboutIntro > *:nth-child(1),
+    .aboutIntro > *:nth-child(2) {
         grid-column: 1 / 2; 
         grid-row: auto; 
     }
     
-    .about > *:nth-child(3) {
+    .aboutIntro > *:nth-child(3) {
         grid-column: 2 / 3;
         grid-row: 1 / 3; 
     }
