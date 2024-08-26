@@ -26,9 +26,9 @@ table {
 
 :root {
   /* Global colors */
-  --orange: #FC8621;    
+  --green: #5f6f52;    
   --black: #101010;  
-  --yellow: #F9E0AE;     
+  --yellow: #Fefae0;     
   --white: #f5f5f5; 
 
   /* Font-size */
@@ -71,7 +71,7 @@ main {
 	
 	width: 100%;
 	margin: 0 auto;
-  background-color: var(--orange);
+  background-color: var(--green);
 }
 
 h1, h2, h3, h4, h5, h6 {

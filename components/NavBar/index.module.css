@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--orange);
+    background-color: var(--green);
 
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -25,7 +25,7 @@
 }
 
 .navListItem {
-    color: var(--orange);
+    color: var(--green);
     text-decoration: none;
     font-size: var(--fs-medium);
     height: 100%;
@@ -33,7 +33,7 @@
 
 .navList li:hover,
 .navList li:active {
-    background: linear-gradient(90deg, var(--orange), var(--yellow));
+    background: linear-gradient(90deg, var(--green), var(--yellow));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +50,7 @@
 
 @media  screen and (min-width:1024px) {
     .navList {
-        background-color: var(--orange);
+        background-color: var(--green);
         color: var(--black);
         display: flex;
         justify-content: right;

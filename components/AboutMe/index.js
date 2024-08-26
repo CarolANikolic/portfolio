@@ -45,6 +45,6 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
     );
 }
