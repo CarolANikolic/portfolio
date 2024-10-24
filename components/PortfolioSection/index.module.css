@@ -1,0 +1,10 @@
+.portfolioSection {
+    background-color: var(--yellow);
+}
+
+.portfolioContainer {
+    display: grid;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
