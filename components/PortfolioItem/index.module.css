@@ -1,0 +1,34 @@
+.projectExplanationContainer {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imageContainer {
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 2rem;
+    overflow: hidden; 
+    width: 80%;
+}
+
+.projectPhoto {
+    object-fit: contain; 
+    width: 100%;
+    height: auto; 
+    object-position: center; 
+}
+
+.iconContainersWrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: right; 
+    align-items: center; 
+    gap: 1rem;
+    margin: 0;
+}
+

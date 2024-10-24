@@ -1,12 +1,13 @@
 import styles from "./index.module.css";
 
 export default function TitleAndText(props) {
-    const { title, titleContent, text, alignment, color, fontSize } = props;
+    const { title, titleContent, text, alignment, color, fontSize, noMargin } = props;
 
     // Determine the alignment, color, and font size classes based on the props
     const alignmentClass = styles[`${alignment}Align`];
     const colorClass = styles[`${color}Color`];
     const fontSizeClass = styles[`${fontSize}Font`];
+
 
     return (
         <div className={styles.titleAndTextContainer}>
@@ -23,7 +24,11 @@ export default function TitleAndText(props) {
                     {titleContent}
                 </h3>
             ) : (
-                <p className={`${alignmentClass} ${colorClass} ${fontSizeClass}`}>
+                <p
+                    className={`${alignmentClass} ${colorClass} ${fontSizeClass} ${
+                        noMargin ? styles.noMargin : ""
+                    }`} 
+                >
                     {text}
                 </p>
             )}

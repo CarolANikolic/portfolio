@@ -40,3 +40,7 @@
 .bigFont {
     font-size: var(--fs-big);      
 }
+
+.noMargin {
+    margin: 0;
+}
