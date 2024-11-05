@@ -20,7 +20,7 @@ import styles from "./index.module.css";
 export default function PortfolioSection() {
     return (
         <section className={styles.portfolioSection}>
-            <div className={styles.portfolioContainer}>
+            <div className={styles.portfolioTitlesContainer}>
                 <TitleAndText
                 title="h2"
                 titleContent="Recent Projects & Work"
@@ -33,13 +33,13 @@ export default function PortfolioSection() {
                 <TitleAndText
                 title=""
                 text="Here are a few of the projects I’ve been working lately."
-                alignment="left"
+                alignment="center"
                 color="regularBlack"
                 fontSize="medium"
                 />
             </div> 
 
-            <div>
+            <div className={styles.portfolioItemsContainer}>
                 <PortfolioItem
                 hrefLink="https://www.google.com/"
                 imageColor={dadiljaMelisaColor}

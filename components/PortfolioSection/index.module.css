@@ -2,9 +2,19 @@
     background-color: var(--yellow);
 }
 
-.portfolioContainer {
+.portfolioTitlesContainer {
     display: grid;
     gap: 1rem;
     width: 80%;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolioItemsContainer {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        justify-items: center; 
+    }
 }
