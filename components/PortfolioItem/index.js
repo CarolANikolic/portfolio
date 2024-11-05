@@ -12,8 +12,7 @@ export default function PortfolioItem(props) {
         imageColor, 
         imageBlack, 
         altPhoto, 
-        title, 
-        text, 
+        titleContent, 
         projectIcon, 
         altIcon, 
         projectCategory, 
@@ -21,6 +20,7 @@ export default function PortfolioItem(props) {
     } = props;
 
     const [isHovered, setIsHovered] = useState(false);
+    console.log(titleContent)
 
     return (
         <section>
@@ -40,16 +40,20 @@ export default function PortfolioItem(props) {
             </div>
 
             <div className={styles.projectExplanationContainer}>
-                <TitleAndText
-                    title={title}
-                    text={text}
-                    alignment="left"
-                    color="boldBlack"
-                    fontSize="medium"
-                    noMargin={false}
-                /> 
-
                 <div>
+                    <Link 
+                        href={hrefLink}
+                        target="_blank"
+                    >
+                        <TitleAndText
+                        title="h3"
+                        titleContent={titleContent}
+                        alignment="left"
+                        color="boldBlack"
+                        fontSize="mediumFont"
+                        noMargin={true}
+                        />
+                    </Link>
                     <div className={styles.iconContainersWrap}>
                         <div  className={styles.iconContainer}>
                             <Image 
@@ -68,7 +72,6 @@ export default function PortfolioItem(props) {
                     </div>
 
                     <TitleAndText
-                        title=""
                         text={paragraphText}
                         alignment="left"
                         color="regularBlack"

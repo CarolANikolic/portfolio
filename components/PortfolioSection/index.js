@@ -45,8 +45,7 @@ export default function PortfolioSection() {
                 imageColor={dadiljaMelisaColor}
                 imageBlack={dadiljaMelisaBlack}
                 altPhoto="Screenshot of the website Dadilja Melisa."
-                title="h3"
-                text="Dadilja Melisa Day Care"
+                titleContent="Dadilja Melisa Day Care"
                 projectIcon={clientIcon}
                 altIcon="Icon for client projects"
                 projectCategory="Client Project"
@@ -58,8 +57,7 @@ export default function PortfolioSection() {
                 imageColor={moneyExchangeColor}
                 imageBlack={moneyExchangeBlack}
                 altPhoto="Screenshot of the website Money Exchange."
-                title="h3"
-                text="Money Exchange"
+                titleContent="Money Exchange"
                 projectIcon={personalIcon}
                 altIcon="Icon for personal projects"
                 projectCategory="Personal Project"
@@ -71,8 +69,7 @@ export default function PortfolioSection() {
                 imageColor={interactiveCardColor}
                 imageBlack={interactiveCardBlack}
                 altPhoto="Screenshot of the website Interactive Card."
-                title="h3"
-                text="Interactive Card"
+                titleContent="Interactive Card"
                 projectIcon={personalIcon}
                 altIcon="Icon for personal projects"
                 projectCategory="Personal Project"
@@ -84,8 +81,7 @@ export default function PortfolioSection() {
                 imageColor={gimenezColor}
                 imageBlack={gimenezBlack}
                 altPhoto="Screenshot of the website Gimenez Luthieria."
-                title="h3"
-                text="Gimenez Luthieria"
+                titleContent="Gimenez Luthieria"
                 projectIcon={clientIcon}
                 altIcon="Icon for client projects"
                 projectCategory="Client Project"
@@ -97,8 +93,7 @@ export default function PortfolioSection() {
                 imageColor={todoListColor}
                 imageBlack={todoListBlack}
                 altPhoto="Screenshot of the website Todo List."
-                title="h3"
-                text="Todo List"
+                titleContent="Todo List"
                 projectIcon={personalIcon}
                 altIcon="Icon for personal projects"
                 projectCategory="Personal Project"
@@ -110,8 +105,7 @@ export default function PortfolioSection() {
                 imageColor={qrCodeColor}
                 imageBlack={qrCodeBlack}
                 altPhoto="Screenshot of the website QR Code generator."
-                title="h3"
-                text=" Easy QR Code Generator"
+                titleContent="Easy QR Code Generator"
                 projectIcon={personalIcon}
                 altIcon="Icon for personal projects"
                 projectCategory="Personal Project"
