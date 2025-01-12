@@ -20,7 +20,6 @@ export default function PortfolioItem(props) {
     } = props;
 
     const [isHovered, setIsHovered] = useState(false);
-    console.log(titleContent)
 
     return (
         <section>
