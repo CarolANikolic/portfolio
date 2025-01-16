@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 
 export default function Skills() {
     return (
-        <section>
+        <section className={styles.skillsSection}>
             <div>
                 <TitleAndText
                 title="h2"
@@ -15,12 +15,12 @@ export default function Skills() {
                 />
             </div>
             
-            <div>
+            <div className={styles.skillsGrid}>
                 {skills.map((skill) => (
                     <TitleAndText
                         key={skill}
                         text={skill}
-                        alignment="left"
+                        alignment="center"
                         color="regularBlack"
                         fontSize="medium"
                     />

@@ -6,8 +6,12 @@ const skills = [
     "JavaScript",
     "Tailwind",
     "ReactJS",
-    "RESTful",
+    "Next",
+    "RESTful API",
     "NodeJS",
+    "jQuery",
+    "Version Control (Git)",
+    "PostgreSQL"
 ];
 
 export default skills
