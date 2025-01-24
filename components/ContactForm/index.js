@@ -5,6 +5,7 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import validationSchema from '@/objects/formValidationSchema';
 import TitleAndText from '../TitleAndText';
+import styles from "./index.module.css";
 
 export default function ContactForm() {
     const [status, setStatus] = useState(""); // For showing submission status (success or error)
@@ -31,48 +32,51 @@ export default function ContactForm() {
     };
 
     return (
-        <section>
-            <TitleAndText
-            title="h2"
-            titleContent="Get in Touch"
-            alignment="center"
-            color="boldBlack"
-            fontSize="big"/>
+        <section className={styles.formSection}>
+            <div className={styles.formContainer}>
+                <hr></hr>
+                <TitleAndText
+                title="h2"
+                titleContent="Get in Touch"
+                alignment="center"
+                color="boldBlack"
+                fontSize="big"/>
 
-            <TitleAndText
-            text="Looking for a Front-End Developer? Let’s chat about your project!"
-            alignment="center"
-            color="regularBlack"
-            fontSize="medium"/>
-            
+                <TitleAndText
+                text="Looking for a Front-End Developer? Let’s chat about your project!"
+                alignment="center"
+                color="regularBlack"
+                fontSize="medium"/>
+                
 
-            <Formik
-                initialValues={{
-                    fullName: '',
-                    email: '',
-                    message: '',
-                }}
-                onSubmit={handleSubmit} 
-                validationSchema={validationSchema}
-            >
-                <Form>
-                    <label htmlFor="fullName">Full Name</label>
-                    <Field id="fullName" name="fullName" placeholder="Jane Doe" />
-                    <ErrorMessage name="fullName" component="div" />
+                <Formik
+                    initialValues={{
+                        fullName: '',
+                        email: '',
+                        message: '',
+                    }}
+                    onSubmit={handleSubmit} 
+                    validationSchema={validationSchema}
+                >
+                    <Form>
+                        <label htmlFor="fullName">Full Name</label>
+                        <Field id="fullName" name="fullName" placeholder="Jane Doe" />
+                        <ErrorMessage name="fullName" component="div" />
 
-                    <label htmlFor="email">Email</label>
-                    <Field id="email" name="email" placeholder="jane@email.com" type="email" />
-                    <ErrorMessage name="email" component="div" />
+                        <label htmlFor="email">Email</label>
+                        <Field id="email" name="email" placeholder="jane@email.com" type="email" />
+                        <ErrorMessage name="email" component="div" />
 
-                    <label htmlFor="message">Message</label>
-                    <Field id="message" name="message" placeholder="Hi Carol, I have a project for you..." />
-                    <ErrorMessage name="message" component="div" />
+                        <label htmlFor="message">Message</label>
+                        <Field id="message" name="message" placeholder="Hi Carol, I have a project for you..." />
+                        <ErrorMessage name="message" component="div" />
 
-                    <button type="submit">Send</button>
-                </Form>
-            </Formik>
+                        <button type="submit">Send</button>
+                    </Form>
+                </Formik>
 
-            {status && <p>{status}</p>} 
+                {status && <p>{status}</p>} 
+            </div>
         </section>
     );
 }

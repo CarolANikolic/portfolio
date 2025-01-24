@@ -14,7 +14,6 @@ import todoListBlack from "@/public/images/todo-list-black.png";
 import todoListColor from "@/public/images/todo-list.png";
 import qrCodeBlack from "@/public/images/qr-code-black.png";
 import qrCodeColor from "@/public/images/qr-code.png";
-
 import styles from "./index.module.css";
 
 export default function PortfolioSection() {
