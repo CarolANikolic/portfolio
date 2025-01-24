@@ -34,7 +34,7 @@ export default function ContactForm() {
         <section>
             <TitleAndText
             title="h2"
-            titleContent="Check Out Some of My Skills"
+            titleContent="Get in Touch"
             alignment="center"
             color="boldBlack"
             fontSize="big"/>
