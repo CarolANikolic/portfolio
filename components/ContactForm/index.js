@@ -58,7 +58,7 @@ export default function ContactForm() {
                     onSubmit={handleSubmit} 
                     validationSchema={validationSchema}
                 >
-                    <Form>
+                    <Form id="contact">
                         <label htmlFor="fullName">Full Name</label>
                         <Field id="fullName" name="fullName" placeholder="Jane Doe" />
                         <ErrorMessage name="fullName" component="div" />
