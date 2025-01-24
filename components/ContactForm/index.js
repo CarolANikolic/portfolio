@@ -4,6 +4,7 @@ import { ErrorMessage } from 'formik';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import validationSchema from '@/objects/formValidationSchema';
+import TitleAndText from '../TitleAndText';
 
 export default function ContactForm() {
     const [status, setStatus] = useState(""); // For showing submission status (success or error)
@@ -31,7 +32,19 @@ export default function ContactForm() {
 
     return (
         <section>
-            <h1>Get in touch</h1>
+            <TitleAndText
+            title="h2"
+            titleContent="Check Out Some of My Skills"
+            alignment="center"
+            color="boldBlack"
+            fontSize="big"/>
+
+            <TitleAndText
+            text="Looking for a Front-End Developer? Let’s chat about your project!"
+            alignment="center"
+            color="regularBlack"
+            fontSize="medium"/>
+            
 
             <Formik
                 initialValues={{
