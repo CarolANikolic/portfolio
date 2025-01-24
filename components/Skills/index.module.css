@@ -1,4 +1,8 @@
 .skillsSection {
+    background-color: var(--yellow);
+}
+
+.skillsSectionContainer {
     padding: 2rem;
     display: flex;
     flex-direction: column;
