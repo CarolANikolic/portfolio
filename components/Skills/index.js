@@ -6,6 +6,7 @@ export default function Skills() {
     return (
         <section className={styles.skillsSection}>
             <div className={styles.skillsSectionContainer}>
+            <hr></hr>
                 <div>
                     <TitleAndText
                     title="h2"
@@ -13,6 +14,13 @@ export default function Skills() {
                     alignment="center"
                     color="boldBlack"
                     fontSize="big"
+                    />
+
+                    <TitleAndText
+                        text="Those are the Developer skills I’ve mastered and am refining, along with QA Testing studies."
+                        alignment="center"
+                        color="regularBlack"
+                        fontSize="medium"
                     />
                 </div>
                 
