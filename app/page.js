@@ -1,6 +1,7 @@
 import AboutMe from "@/components/AboutMe";
 import PortfolioSection from "@/components/PortfolioSection";
 import Skills from "@/components/Skills";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <AboutMe/>
       <PortfolioSection/>
       <Skills/>
+      <ContactForm/>
     </main>
   );
 }
