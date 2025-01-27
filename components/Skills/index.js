@@ -6,7 +6,7 @@ export default function Skills() {
     return (
         <section className={styles.skillsSection}>
             <div className={styles.skillsSectionContainer}>
-            <hr></hr>
+                <hr></hr>
                 <div>
                     <TitleAndText
                     title="h2"

@@ -3,24 +3,21 @@
 }
 
 .skillsSectionContainer {
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
 }
 
 .skillsGrid {
+    justify-content: center; 
+    align-items: center;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem; 
     width: 80%; 
     margin-top: 2rem; 
-}
-
-.skillsGrid div { 
-    display: flex;
-    justify-content: center; 
-    align-items: center;
 }
 
 .skillsGrid div:last-child {

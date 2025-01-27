@@ -58,20 +58,28 @@ export default function ContactForm() {
                     onSubmit={handleSubmit} 
                     validationSchema={validationSchema}
                 >
-                    <Form id="contact">
-                        <label htmlFor="fullName">Full Name</label>
-                        <Field id="fullName" name="fullName" placeholder="Jane Doe" />
-                        <ErrorMessage name="fullName" component="div" />
+                    <Form className={styles.contactForm} id="contact">
+                        <div >
+                            <label htmlFor="fullName">Full Name</label>
+                            <Field className={styles.formField} id="fullName" name="fullName" placeholder="Jane Doe" />
+                            <ErrorMessage name="fullName" component="div" />
+                        </div>
+                        
+                        <div>
+                            <label htmlFor="email">Email</label>
+                            <Field className={styles.formField} id="email" name="email" placeholder="jane@email.com" type="email" />
+                            <ErrorMessage name="email" component="div" />
+                        </div>
+                        
+                        <div>
+                            <label htmlFor="message">Message</label>
+                            <Field as="textarea" className={`${styles.formField} ${styles.formFieldMessage}`} id="message" name="message" placeholder="Hi Carol, I have a project for you..." />
+                            <ErrorMessage name="message" component="div" />
+                        </div>
 
-                        <label htmlFor="email">Email</label>
-                        <Field id="email" name="email" placeholder="jane@email.com" type="email" />
-                        <ErrorMessage name="email" component="div" />
-
-                        <label htmlFor="message">Message</label>
-                        <Field id="message" name="message" placeholder="Hi Carol, I have a project for you..." />
-                        <ErrorMessage name="message" component="div" />
-
-                        <button type="submit">Send</button>
+                        <div>
+                            <button type="submit">Send</button>
+                        </div>
                     </Form>
                 </Formik>
 
