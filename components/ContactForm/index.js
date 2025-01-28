@@ -5,10 +5,13 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import validationSchema from '@/objects/formValidationSchema';
 import TitleAndText from '../TitleAndText';
+import InputField from '../InputField';
 import styles from "./index.module.css";
+
 
 export default function ContactForm() {
     const [status, setStatus] = useState(""); // For showing submission status (success or error)
+    const [isSuccess, setIsSuccess] = useState(false); // To track success or error
 
     // Retrieve the environment variables 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -22,11 +25,13 @@ export default function ContactForm() {
                 (response) => {
                     console.log("SUCCESS:", response);
                     setStatus("Thank you for your message! I’ll get back to you soon.");
+                    setIsSuccess(true); 
                     resetForm(); 
                 },
                 (error) => {
                     console.log("FAILED:", error);
                     setStatus("Something went wrong. Please try again.");
+                    setIsSuccess(false); 
                 }
             );
     };
@@ -34,20 +39,21 @@ export default function ContactForm() {
     return (
         <section className={styles.formSection}>
             <div className={styles.formContainer}>
-                <hr></hr>
+                <hr />
                 <TitleAndText
-                title="h2"
-                titleContent="Get in Touch"
-                alignment="center"
-                color="boldBlack"
-                fontSize="big"/>
+                    title="h2"
+                    titleContent="Get in Touch"
+                    alignment="center"
+                    color="boldBlack"
+                    fontSize="big"
+                />
 
                 <TitleAndText
-                text="Looking for a Front-End Developer? Let’s chat about your project!"
-                alignment="center"
-                color="regularBlack"
-                fontSize="medium"/>
-                
+                    text="Looking for a Front-End Developer? Let’s chat about your project!"
+                    alignment="center"
+                    color="regularBlack"
+                    fontSize="medium"
+                />
 
                 <Formik
                     initialValues={{
@@ -59,22 +65,26 @@ export default function ContactForm() {
                     validationSchema={validationSchema}
                 >
                     <Form className={styles.contactForm} id="contact">
-                        <div >
-                            <label htmlFor="fullName">Full Name</label>
-                            <Field className={styles.formField} id="fullName" name="fullName" placeholder="Jane Doe" />
-                            <ErrorMessage name="fullName" component="div" />
-                        </div>
-                        
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <Field className={styles.formField} id="email" name="email" placeholder="jane@email.com" type="email" />
-                            <ErrorMessage name="email" component="div" />
-                        </div>
-                        
+                        <InputField 
+                            styles="styles.formField"
+                            stylesError="styles.errorMessage"
+                            label="Full Name" 
+                            name="fullName" 
+                            type="text"
+                            placeholder="Jane Doe" />
+
+                        <InputField 
+                            styles="styles.formField"
+                            stylesError="styles.errorMessage"
+                            label="Email" 
+                            name="email" 
+                            placeholder="jane@email.com" 
+                            type="email" />
+
                         <div>
                             <label htmlFor="message">Message</label>
                             <Field as="textarea" className={`${styles.formField} ${styles.formFieldMessage}`} id="message" name="message" placeholder="Hi Carol, I have a project for you..." />
-                            <ErrorMessage name="message" component="div" />
+                            <ErrorMessage className={styles.errorMessage} name="message" component="div" />
                         </div>
 
                         <div>
@@ -83,8 +93,13 @@ export default function ContactForm() {
                     </Form>
                 </Formik>
 
-                {status && <p>{status}</p>} 
+                {status && (
+                    <p className={isSuccess ? styles.formConfirmation : styles.formError}>
+                        {status}
+                    </p>
+                )}
             </div>
         </section>
     );
 }
+
